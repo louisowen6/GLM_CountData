@@ -29,6 +29,17 @@ There are 2 types of GLM for count data which tested: **Poisson Regression** and
 
 There are several hypothesis testing used in this project, including:
   - Wald Test
-  
     This test aims to test the parameter significance in GLM regression. 
+  - Pearson Chi-Square Goodness of Fit Test
+    This test aims to test if Poisson model is suitable or not
+  - Likelihood Ratio Test
+    This is a goodness of fit test to compare 2 different regression model, with chi-square distributes statistics
+  - Likelihood Ratio Test for Overdispersion
+    This test aims to check if Poisson or Negative Binomial regression is more suitable
+    
+## Results
 
+- Poisson regression model is more suitable than Negative Binomial
+- The Poisson model is using logarithmic link function and has log(number of man) as the model offset
+- The highest mortality rate occurs when the age is above 80 years old and consume cigarette only
+- The lowest mortality rate occurs when the age is 40-44 years old and not consume any type of cigarettes
